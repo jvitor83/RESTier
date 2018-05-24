@@ -21,8 +21,9 @@ md bin\nuget\%config%
 set params=-Prop Configuration=%config% -OutputDirectory bin\nuget\%config%
 
 .nuget\NuGet pack src\Microsoft.Restier.Core\Microsoft.Restier.Core.csproj %params%
-.nuget\NuGet pack src\Microsoft.Restier.Security\Microsoft.Restier.Security.csproj %params%
+REM .nuget\NuGet pack src\Microsoft.Restier.Security\Microsoft.Restier.Security.csproj %params%
 .nuget\NuGet pack src\Microsoft.Restier.Providers.EntityFramework\Microsoft.Restier.Providers.EntityFramework.csproj %params%
+.nuget\NuGet pack src\Microsoft.Restier.Providers.EntityFramework7\Microsoft.Restier.Providers.EntityFramework7.csproj %params%
 .nuget\NuGet pack src\Microsoft.Restier.Publishers.OData\Microsoft.Restier.Publishers.OData.csproj %params%
 .nuget\NuGet pack src\Microsoft.Restier\Microsoft.Restier.nuspec %params%
 
