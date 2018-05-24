@@ -8,10 +8,10 @@ using System.ComponentModel;
 using System.Globalization;
 using System.Threading.Tasks;
 using System.Web.Http;
-using System.Web.OData.Batch;
-using System.Web.OData.Extensions;
-using System.Web.OData.Routing;
-using System.Web.OData.Routing.Conventions;
+using Microsoft.AspNet.OData.Batch;
+using Microsoft.AspNet.OData.Extensions;
+using Microsoft.AspNet.OData.Routing;
+using Microsoft.AspNet.OData.Routing.Conventions;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OData;
 using Microsoft.OData.Edm;
@@ -29,7 +29,8 @@ namespace Microsoft.Restier.Publishers.OData
     public static class HttpConfigurationExtensions
     {
         private const string UseVerboseErrorsFlagKey = "Microsoft.Restier.UseVerboseErrorsFlag";
-        private const string RootContainerKey = "System.Web.OData.RootContainerMappingsKey";
+
+        // private const string RootContainerKey = "Microsoft.AspNet.OData.RootContainerMappingsKey";
 
         /// TODO GitHubIssue#51 : Support model lazy loading
         /// <summary>
